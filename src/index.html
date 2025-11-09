@@ -13,16 +13,45 @@
     />
   </head>
   <body>
-    <div class="w-[1200px] mx-auto flex flex-col">
-        <nav class="h-[148px] grid grid-cols-3">
-          <div class=" flex flex-col">
-            <div class="flex justify-start mt-[20px] text-[30px]">Area</div>
+    <div
+      class="w-[375px] tablet:w-[800px] tablet:px-[40px] desktop:w-[1200px] mx-auto flex flex-col"
+    >
+      <!-- Navigation Bar -->
+      <nav class="h-[106px] desktop:h-[148px]">
+        <div
+          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center desktop:grid-cols-3 p-[20px]"
+        >
+          <div class="">
+            <div class="text-[30px]">Area</div>
           </div>
-          <div class="flex flex-col items-center ">
-            <div
-              class="mt-[16px] w-[399px] h-[60px] flex justify-center items-center text-[14px] rounded-full"
+
+          <div class="cursor-pointer">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div class="flex gap-7 font-['DM Sans'] font-bold">
+              <path
+                d="M3 5.6665H21V7.6665H3V5.6665ZM3 10.6665H21V12.6665H3V10.6665ZM3 15.6665H21V17.6665H3V15.6665Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="hidden tablet:flex justify-center items-center h-[148px] p-[32px]"
+        >
+          <div class="text-[30px]">Area</div>
+          <div class="flex-col items-center">
+            <div
+              class="mt-[16px] w-[399px] h-[60px] justify-center items-center text-[14px] rounded-full"
+            >
+              <div
+                class="gap-7 font-['DM Sans'] font-bold flex justify-center items-center"
+              >
                 <span>Benefits</span>
                 <span>Specifications</span>
                 <span>How-to</span>
@@ -33,53 +62,103 @@
           <div class="">
             <div class="flex justify-end">
               <div
-                class="bg-[#485C11] text-white px-[22px] py-[14px] flex justify-center items-center rounded-full "
+                class="bg-[#485C11] text-white px-[22px] py-[14px] flex justify-center items-center rounded-full"
               >
                 Learn More
               </div>
             </div>
           </div>
-        </nav>
-
-
-
-
-
-
-
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <div
+        class="h-[738px] desktop:max-w-[1500px] flex flex-col justify-between"
+      >
+        <h1
+          class="w-full font-['Crimson_Text'] font-normal text-[76px] desktop:text-[160px] leading-[85%] tracking-[-0.05em] text-center text-black"
+        >
+          Browse Everything.
+        </h1>
 
         <div
-          class="h-[738px] max-w-[1500px] flex flex-col justify-between"
+          class="h-[362px] bg-[#8E9C78] flex justify-center items-center rounded-[30px]"
         >
-          <h1
-            class="w-full font-['Crimson_Text'] font-normal text-[160px] leading-[85%] tracking-[-0.05em] text-center text-black"
+          <div
+            class="flex justify-center items-center h-[644px] w-[907px] rounded-[24px] bg-black"
           >
-            Browse Everything.
-          </h1>
-
-          <div class="rounded-[30px]">
-            <div
-              class="h-[362px] bg-[#8E9C78] flex justify-center items-center"
-            >
-              <div class="w-full flex justify-center items-center h-[644px]">
-                <img
-                  src="./../assets/img/InnerScreen.png"
-                  alt="Hero Image"
-                  class="w-[907px] h-[644px] -mb-24 border-42"
-                />
-              </div>
+            <img
+              src="./../assets/img/InnerScreen.png"
+              alt="Hero Image"
+              class="w-[869.74px] h-[607.44px] -mb-30 border-42 rounded-[24px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Trusted By Section -->
+      <div class="relative z-10 bg-white">
+        <div class="h-[235px] border-b">
+          <div class="h-[101px]">
+            <div class="pt-[50px] text-[15px] font-[DM Sans] text-[#6F6F6F]">
+              Trusted By:
+            </div>
+          </div>
+          <div
+            class="h-[84px] -mb-[50px] flex flex-wrap justify-center items-center gap-x-[40px] gap-y-[20px]"
+          >
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy1.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
+            </div>
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy2.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
+            </div>
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy3.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
+            </div>
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy4.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
+            </div>
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy5.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
+            </div>
+            <div class="w-[154px] h-[84px] flex justify-center items-center">
+              <img
+                src="./../assets/img/TrustedBy6.png"
+                alt=""
+                class="max-w-[114px] max-h-[44px]"
+              />
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
+      </div>
+      <!-- Benefits -->
+      <div class="h-[1412px] bg-gray-100"></div>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+<!-- <h1
+        class="font-['Crimson_Text'] font-normal text-[76px] tablet:text-[140px] desktop:text-[160px] leading-[85%] tablet:leading-[80%] dekstop:leading-[85%] tracking-[-.045em] tablet:tracking-[-0.05em] text-center"
+      >
+        Browse everything.
+      </h1> -->
