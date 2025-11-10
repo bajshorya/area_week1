@@ -14,12 +14,12 @@
   </head>
   <body>
     <div
-      class="max-w-[375px] tablet:max-w-[800px] desktop:max-w-[1200px] flex flex-col mx-auto"
+      class="px-[16px] tablet:max-w-[800px] tablet:px-[40px] desktop:min-w-[1280px] flex flex-col mx-auto"
     >
       <!-- Navigation Bar -->
       <nav class="h-[106px] tablet:h-[148px]">
         <div
-          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center desktop:grid-cols-3 p-[20px]"
+          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-start desktop:grid-cols-3 p-[20px]"
         >
           <div>
             <div class="text-[30px]">Area</div>
@@ -45,43 +45,64 @@
           <div class="text-[30px] min-w-[127px]">Area</div>
 
           <div
-            class="w-[399px] h-[60px] flex justify-center items-center text-[14px] gap-[27px] rounded-full mx-auto"
+            class="w-[399px] h-[60px] flex justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto c"
           >
-            <span>Benefits</span>
-            <span>Specifications</span>
-            <span>How-to</span>
-            <span>Contact-us</span>
+            <a class="cursor-pointer" href="#benefits">Benefits</a>
+            <a class="cursor-pointer" href="#specs">Specifications</a>
+            <a class="cursor-pointer" href="#How-to">How-to</a>
+            <a class="cursor-pointer" href="#connect">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
-            <div
-              class="bg-[#485C11] text-white px-[22px] py-[14px] flex justify-center items-center rounded-full"
+            <button
+              class="bg-[#485C11] text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5"
             >
               Learn More
-            </div>
+              <svg
+                width="7"
+                height="20"
+                viewBox="0 0 7 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </nav>
       <!-- Hero Section -->
       <div
-        class="h-[738px] mx-[16px] desktop:max-w-[1500px] flex flex-col justify-between"
+        class="h-[732px] desktop:max-w-[1280px] desktop:h-[738px] flex flex-col justify-between"
       >
         <h1
-          class="w-full font-crimson-text font-normal text-[76px] desktop:text-[160px] leading-[85%] tracking-[-0.05em] text-center text-black"
+          class="mt w-full font-crimson-text font-light text-[76px] tablet:text-[140px] desktop:text-[160px] leading-[85%] tracking-[-0.05em] text-center text-black desktop:pb-[78px]"
         >
           Browse Everything.
         </h1>
-        <div class="">
+        <div>
           <div
-            class="h-[362px] bg-[#8E9C78] flex justify-center items-center rounded-[30px]"
+            class="h-[362px] bg-[#8E9C78] desktop:mt-[240px] flex justify-center items-center rounded-[30px]"
           >
             <div
-              class="flex justify-center items-center h-[541.8243408203125px] tablet:hidden w-[270px] rounded-[27.36px] bg-black -mt-[81.276123046875px]"
+              class="flex justify-center items-center h-[422.93597412109375] tablet:hidden w-[270px] rounded-[27.36px] bg-black -mt-[81.276123046875px]"
             >
               <img
-                src="./../assets/img/InnerScreenMobile.png"
+                src="./../assets/img/InnerScreenMobile2.png"
                 alt="Hero Image"
-                class="w-[248.1081085205078px] h-[521.7567749023438px] mx-[10.95px] border-42 rounded-[27.36px]"
+                class="w-[248.1081085205078px] h-[521.7567749023438px] m-[10.95px] border-42 rounded-[27.36px]"
+              />
+            </div>
+            <div
+              class="hidden tablet:block justify-center items-center h-[541.8243408203125px] tablet:w-[676.5484008789062px] rounded-[17.9px] bg-black desktop:h-[644px] desktop:w-[907px] desktop:rounded-[16px] desktop:-mt-[141px]"
+            >
+              <img
+                src="./../assets/img/InnerScreenTablet.png"
+                alt="Hero Image"
+                class="w-[648.7572021484375px] h-[453.1002502441406] m-[13.9px] border-42 rounded-[17.9px] desktop:w-[869.7423706054688px] desktop:mx-[18.63px] desktop:mt-[18.5px] desktop:rounded-[16px]"
               />
             </div>
           </div>
@@ -90,14 +111,16 @@
       <!-- Trusted By Section -->
       <div class="relative z-10 bg-white">
         <div
-          class="h-[436.4545593261719px] tablet:h-[334.6363525390625px] mx-[16px] tablet:mx-[40px] desktop:h-[235px] border-b"
+          class="h-[436.4545593261719px] tablet:h-[334.6363525390625px] desktop:h-[235px]"
         >
           <div class="h-[101px]">
-            <div class="pt-[50px] text-[15px] font-[DM Sans] text-[#6F6F6F]">
+            <div
+              class="pt-[50px] pb-[30px] text-[15px] font-[DM Sans] text-[#6F6F6F]"
+            >
               Trusted By:
             </div>
           </div>
-          <div class="mb-[50px]">
+          <div class="desktop:h-[84px] mb-[50px]">
             <div
               class="min-h-[81.81818389892578px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] tablet:gap-y-[20px]"
             >
@@ -138,7 +161,7 @@
                 />
               </div>
               <div
-                class="flex justify-center items-center h-[81.81818389892578px] tablet:col-span-2 desktop:col-span-1"
+                class="flex justify-center items-center h-[81.81818389892578px] tablet:col-start-2 tablet:row-start-2 desktop:col-start-auto desktop:row-start-auto"
               >
                 <img
                   src="./../assets/img/TrustedBy5.png"
@@ -147,7 +170,7 @@
                 />
               </div>
               <div
-                class="flex justify-center items-center h-[81.81818389892578px] tablet:col-span-2 desktop:col-span-1"
+                class="flex justify-center items-center h-[81.81818389892578px] tablet:col-start-3 tablet:row-start-2 desktop:col-start-auto desktop:row-start-auto"
               >
                 <img
                   src="./../assets/img/TrustedBy6.png"
@@ -159,29 +182,28 @@
           </div>
         </div>
       </div>
-      <!-- Benefits -->
-      <section class="my-[50px] mx-[16px]">
-        <div>
-          <caption
-            class="font-['Roboto_Mono'] font-normal text-[10.5px] leading-[140%] tracking-[-.03em text-[#485C11]"
+      <!-- Benefits !!!-->
+      <section class="border-t" id="benefits">
+        <div class="mt-[80px]">
+          <h1
+            class="font-roboto-mono desktop:text-[12px] font-normal text-[10.5px] leading-[140%] tracking-[-.03em] text-[#485C11]"
           >
             Benefits
-          </caption>
+          </h1>
           <h1
-            class="font-crimson-text font-normal text-[50px] leading-[90%] tracking-[-.03em] my-[30px] text-headline"
+            class="font-crimson-text font-normal text-[50px] desktop:text-[60px] leading-[95%] tracking-[-.03em] my-[30px] desktop:my-[50px] text-headline"
           >
             We've cracked the code.
           </h1>
           <p
-            class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+            class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph text-[#6F6F6F]"
           >
             Area provides real insights, without the data overload.
           </p>
         </div>
 
-        <!-- Benefits Section  -->
         <div
-          class="grid grid-cols-1 my-[90px] *:border-divider *:py-10 *:border-t"
+          class="grid grid-cols-1 tablet:grid-cols-2 tablet:grid-rows-2 gap-5 desktop:grid-rows-1 desktop:grid-cols-4 my-[90px] *:border-divider *:py-10 *:border-t"
         >
           <div>
             <svg
@@ -289,9 +311,8 @@
           </div>
         </div>
 
-        <!-- Scenes -->
         <div
-          class="flex justify-center items-center mb-[100px] tablet:mb-[120px] desktop:mb-"
+          class="flex justify-center items-center mb-[100px] tablet:mb-[120px]"
         >
           <img
             src="../assets/img/Scene1.jpg"
@@ -300,142 +321,661 @@
           />
         </div>
       </section>
-      <!-- See the big Picture -->
-      <section
-        class="h-[1321.0145263671875px] tablet:h-[1516px] desktop:[831px] mx-[16px]"
-      >
-        <div class="desktop:flex items-center justify-center">
-          <div class="h-[856px] tablet:h-[664px] pt-[60px] pb-[80px] border-t">
-            <div class="h-[197px] pr-[80px]">
-              <p
-                class="font-crimson-text text-[50px] tracking-[-0.03em] leading-[95%]"
-              >
-                See the Big Picture
-              </p>
-              <p class="text-[15px] tracking-[-0.05em] leading-[140%] mt-10">
-                Area turns your data into clear, vibrant visuals that show you
-                exactly what's happening in each region.
-              </p>
-            </div>
-            <div class="h-[391px] mt-[40px]">
-              <div
-                class="h-[82px] flex justify-stretch pt-[20px] mb-[20px] gap-[30px] border-t"
-              >
-                <p>01</p>
-                <div class="h-[42px] w-[265px]">
-                  <p>
-                    Spot Trends in Seconds: No more digging through numbers.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="h-[82px] flex justify-stretch pt-[20px] mb-[20px] gap-[30px] border-t"
-              >
-                <p>02</p>
-                <div class="h-[42px] w-[265px]">
-                  <p>
-                    Get Everyone on the Same Page: Share easy-to-understand
-                    reports with your team.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="h-[82px] flex justify-stretch pt-[20px] mb-[20px] gap-[30px] border-t"
-              >
-                <p>03</p>
-                <div class="h-[42px] w-[265px]">
-                  <p>
-                    Make Presentations Pop: Interactive maps and dashboards keep
-                    your audience engaged.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="h-[82px] flex justify-stretch pt-[20px] mb-[20px] gap-[30px] border-t"
-              >
-                <p>04</p>
-                <div class="h-[42px] w-[265px]">
-                  <p>
-                    Your Global Snapshot: Get a quick, clear overview of your
-                    entire operation.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="mt-[60px] mb-[80px]">
-                <button
-                  class="py-[14px] px-[22px] bg-[#DFECC6] rounded-[1000px] font-dm-sans text-[14px] text-bold"
+      <!-- See the big Picture Section-->
+      <section class="desktop:mb-[120px]">
+        <div
+          class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *:"
+        >
+          <div class="desktop:border-t desktop:border-[#929292]">
+            <h1
+              class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[60px] text-headline"
+            >
+              See the Big Picture
+            </h1>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-10 text-paragraph"
+            >
+              Area turns your data into clear, vibrant visuals that show you
+              exactly what's happening in each region.
+            </p>
+
+            <div
+              class="*:py-5 *:flex tablet:*:items-center *:justify-start *:gap-[30px] *:border-t *:border-divider"
+            >
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
                 >
-                  Discover More
-                </button>
+                  01
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Spot Trends in Seconds: No more digging through numbers.
+                </div>
               </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  02
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Get Everyone on the Same Page: Share easy-to-understand
+                  reports with your team.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  03
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Make Presentations Pop: Interactive maps and dashboards keep
+                  your audience engaged.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  04
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Your Global Snapshot: Get a quick, clear overview of your
+                  entire operation.
+                </div>
+              </div>
+              <button
+                class="px-[22px] bg-[#DFECC6] py-[14px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex mt-10"
+              >
+                Discover More
+              </button>
             </div>
           </div>
-          <div>
+
+          <div
+            class="flex justify-center items-center mb-[100px] tablet:mb-[120px] my-20 desktop:my-0"
+          >
             <img
               src="../assets/img/Cubes.jpg"
-              alt=""
-              class="h-[385.0145568847656px] rounded-[30px] object-cover tablet:h-[751px] desktop:h-[831px]"
+              alt="scene1"
+              class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[600px] desktop:w-[1200px] desktop:h-[620px] object-cover rounded-[30px]"
             />
           </div>
         </div>
       </section>
-      <!-- Specs2 -->
-      <div class="h-[909px] tablet:h-[1256px] mx-[16px] tablet:mx-[40px]">
+      <!-- Why Choose Area Section -->
+      <section class="desktop:h-[1163px] desktop:pb-[120px]" id="specs">
         <div
-          class="flex justify-center items-center mb-[40px] tablet:mb-[40px] desktop:mb-"
+          class="h-[470px] py-[80px] tablet-h-[434px] border-t desktop:h-[441px] w-full desktop:flex justify-center items-center"
         >
-          <img
-            src="../assets/img/3Balls.jpg"
-            alt="scene1"
-            class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[1200px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
-          />
-        </div>
-        <div>
-          <p
-            class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tracking-[-0.03em] text-left border-t pt-[40px]"
-          >
-            “I was skeptical, but Area has completely transformed the way I
-            manage my business. The data visualizations are so clear and
-            intuitive, and the platform is so easy to use. I can't imagine
-            running my company without it.”
-          </p>
-
-          <div class="flex items-baseline gap-[9px] mt-[50px] px-[16px]">
-            <p class="text-[15px]">John Smith</p>
-            <p class="text-[10.5px] tablet:text-[11px]">Head of Data</p>
-          </div>
-        </div>
-      </div>
-      <!-- MapYourSuccess -->
-      <section
-        class="border-t h-[700px] pb-[100px] mx--[20px] pt-[80px] tablet:h-[650px]"
-      >
-        <div class="h-[135px]">
-          <div class="tablet:w-full tablet:flex justify-between items-center">
-            <h4
-              class="text-[45px] font-crimson-text leading-[95%] tracking-[-0.03em] text-nowrap"
+          <div class="desktop:px[240px] desktop:w-[720px]">
+            <p
+              class="flex justify-center items-center font-roboto-mono font-normal text-[10.5px] leading-[140%] tracking-[-.03em] mb-[30px] text-[#485C11]"
             >
-              Map Your Success
-            </h4>
+              Specs
+            </p>
+            <h1
+              class="flex justify-center items-center font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[30px] text-headline"
+            >
+              Why Choose Area?
+            </h1>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-[30px] text-paragraph text-center"
+            >
+              You need a solution that keeps up. That’s why we developed Area. A
+              developer-friendly approach to streamline your business.
+            </p>
             <button
-              class="py-[14px] px-[22px] mt-[40px] bg-[#DFECC6] rounded-[1000px] font-dm-sans text-[14px] text-bold"
+              class="flex justify-center items-center px-[22px] py-[14px] gap-[10px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[20px] tracking-[-0.005em] font-medium mx-auto bg-[#DFECC6]"
             >
               Discover More
             </button>
           </div>
         </div>
 
-        <div class="h-[305px] mt-[100px] flex gap-[20px] overflow-x-auto">
+        <!-- Specs Table  -->
+        <div class="flex overflow-x-auto">
+          <!-- Column 1 -->
+          <div
+            class="min-w-[200px] desktop:min-w-[400px] bg-white shadow-[0px_2px_8px_rgba(0,0,0,0.08)] overflow-hidden rounded-[20px] border-b border-[#E9E9E9] flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 border-b border-[#929292] flex justify-center items-center"
+            >
+              <div
+                class="text-black text-[25.71px] font-dm-sans font-medium leading-[120%] tracking-[-0.08em]"
+              >
+                Area
+              </div>
+            </div>
+
+            <!-- Feature List -->
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Ultra-fast browsing
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Advanced AI insights
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Seamless integration
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Advanced AI insights
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Ultra-fast browsing
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="11"
+                height="8"
+                viewBox="0 0 11 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                  fill="#485C11"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2  -->
+          <div
+            class="flex-1 min-w-[200px] overflow-hidden flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 border-b border-[#929292] flex justify-center items-center gap-4"
+            >
+              <div
+                class="text-[22.86px] font-rethink-sans font-medium leading-[120%] tracking-[-0.08em] text-[#6F6F6F]"
+              >
+                WebSurge
+              </div>
+            </div>
+
+            <!-- Feature Column -->
+            <div class="border-r border-[#E9E9E9] w-full">
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="11"
+                  height="8"
+                  viewBox="0 0 11 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                    fill="#485C11"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Fast browsing
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="11"
+                  height="8"
+                  viewBox="0 0 11 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                    fill="#485C11"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Basic AI recommendations
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="11"
+                  height="8"
+                  viewBox="0 0 11 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                    fill="#485C11"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Restricts customization
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="9"
+                  height="9"
+                  viewBox="0 0 9 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Basic AI insights
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="11"
+                  height="8"
+                  viewBox="0 0 11 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.2083 0.8225L3.20833 7.8225L0 4.61417L0.8225 3.79167L3.20833 6.17167L9.38583 0L10.2083 0.8225Z"
+                    fill="#485C11"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Fast browsing
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <svg
+                  width="9"
+                  height="9"
+                  viewBox="0 0 9 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                    fill="#6F6F6F"
+                  />
+                </svg>
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Potential display errors
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div
+            class="flex-1 min-w-[200px] overflow-hidden flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 py-10 border-b border-[#929292] flex justify-center items-start gap-4"
+            >
+              <div
+                class="text-[21.65px] font-reddit-mono font-medium leading-[120%] tracking-[-0.08em] align-middle text-[#6F6F6F]"
+              >
+                HyperView
+              </div>
+            </div>
+
+            <!-- Feature Column -->
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Moderate speeds
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Steep learning curve
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                No AI assistance
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Moderate speeds
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Partial UTF-8 support
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <svg
+                width="9"
+                height="9"
+                viewBox="0 0 9 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.935 4.08333L8.16667 7.315V8.16667H7.315L4.08333 4.935L0.851667 8.16667H0V7.315L3.23167 4.08333L0 0.851667V0H0.851667L4.08333 3.23167L7.315 0H8.16667V0.851667L4.935 4.08333Z"
+                  fill="#6F6F6F"
+                />
+              </svg>
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Potential display errors
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Specs2 -->
+      <div
+        class="mt-[120px] h-[909px] tablet:h-[1256px] desktop:h-[789.3818359375px] desktop:flex justify-stretch items-center desktop:pb-[120px]"
+      >
+        <div
+          class="flex flex-col justify-center items-center desktop:grid grid-col-1 tablet:grid-cols-2 gap-5 mb-[40px] tablet:mb-[40px]"
+        >
+          <img
+            src="../assets/img/3Balls.jpg"
+            alt="scene1"
+            class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[590px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
+          />
+          <div
+            class="desktop:h-[669.3818359375px] desktop:w-[590px] desktop:border-t"
+          >
+            <div
+              class="desktop:w-[540px] desktop:h-[294px] desktop:mt-[139.69px] mt-[50px]"
+            >
+              <p
+                class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left pt-[40px] desktop:leading-[105%] desktop:tracking-[-0.04em]"
+              >
+                “I was skeptical, but Area has completely transformed the way I
+                manage my business. The data visualizations are so clear and
+                intuitive, and the platform is so easy to use. I can't imagine
+                running my company without it.”
+              </p>
+              <div
+                class="flex desktop:flex-col items-baseline gap-[9px] mt-[50px]"
+              >
+                <p
+                  class="text-[15px] desktop:leading-[140%] desktop:tracking-[-0.005em]"
+                >
+                  John Smith
+                </p>
+                <p
+                  class="font-roboto-mono text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] desktop:tracking-[-0.01em] text-[#485C11]"
+                >
+                  Head of Data
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MapYourSuccess -->
+      <section
+        class="h-[700px] border-t tablet:h-[650px] desktop:h-[634px]"
+        id="How-to"
+      >
+        <div
+          class="mt-[80px] h-[135px] desktop:h-[54px] flex items-center tablet:py-[80px]"
+        >
+          <div
+            class="pb-[80px] tablet:w-full tablet:flex justify-between items-center"
+          >
+            <h4
+              class="text-[50px] tablet:text-[54px] desktop:text-[60px] font-crimson-text leading-[95%] tracking-[-0.03em] text-nowrap"
+            >
+              Map Your Success
+            </h4>
+            <button
+              class="mt-[40px] py-[14px] px-[22px] bg-[#DFECC6] rounded-[1000px] font-dm-sans text-[14px] text-bold"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="h-[305px] flex gap-[20px] overflow-x-auto desktop:h-[300px] desktop:w-full"
+        >
           <div class="flex-shrink-0 border-t">
             <h1
-              class="font-dm-sans text-[64px] mt-[60px] text-[#929292] w-[240px]"
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
             >
               01
             </h1>
-            <div class="w-[210px]">
-              <h3 class="text-[18px] font-crimson-text">Get Started</h3>
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
+                Get Started
+              </h3>
               <p class="font-dm-sans text-[#6F6F6F] text-[15px]">
                 With our intuitive setup, you're up and running in minutes.
               </p>
@@ -443,27 +983,29 @@
           </div>
           <div class="flex-shrink-0 border-t">
             <h1
-              class="font-dm-sans text-[64px] mt-[60px] text-[#929292] w-[240px]"
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
             >
               02
             </h1>
-            <div class="w-[210px]">
-              <h3 class="text-[18px] font-crimson-text">
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
                 Customize and Configure
               </h3>
-              <p class="font-dm-sans text-[#6F6F6F] text-[15px]">
+              <p class="font-dm-sans text-[#6F6F6F] text-[15px] leading-[140%]">
                 Adapt Area to your specific requirements and preferences.
               </p>
             </div>
           </div>
           <div class="flex-shrink-0 border-t">
             <h1
-              class="font-dm-sans text-[64px] mt-[60px] text-[#929292] w-[240px]"
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
             >
               03
             </h1>
-            <div class="w-[210px]">
-              <h3 class="text-[18px] font-crimson-text">Grow Your Business</h3>
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
+                Grow Your Business
+              </h3>
               <p class="font-dm-sans text-[#6F6F6F] text-[15px]">
                 Make informed decisions to exceed your goals.
               </p>
@@ -480,33 +1022,49 @@
       </div>
       <!-- Connect With Us -->
       <section
-        class="h-[457px] tablet:h-[457px] desktop:h-[464px] py-[120px] border-y mt-[40px]"
+        class="h-[457px] tablet:h-[459px] desktop:h-[464px] py-[120px] tablet:px-[100px] border-y mt-[40px]"
+        id="connect"
       >
-        <h1
-          class="font-crimson-text text-[50px] leading-[95%] tracking-[-0.03em] whitespace-nowrap"
-        >
-          Connect with us
-        </h1>
-        <div class="h-[42px] mt-[40px]">
+        <div class="flex justify-center items-center">
+          <h1
+            class="font-crimson-text text-[50px] leading-[95%] tracking-[-0.03em] whitespace-nowrap tablet:flex justify-center items-center tablet:text-[54px]"
+          >
+            Connect with us
+          </h1>
+        </div>
+
+        <div class="h-[42px] mt-[40px] flex justify-center items-center">
           <p
-            class="text-[15px] leading-[140%] tracking-[-0.05em] font-dm-sans text-[#6F6F6F] text-center align-middle"
+            class="text-[15px] w-[343px] leading-[140%] tracking-[-0.05em] font-dm-sans text-[#6F6F6F] text-center align-middle"
           >
             Schedule a quick call to learn how Area can turn your regional data
             into a powerful advantage.
           </p>
         </div>
         <div class="mt-[40px] w-full flex justify-center items-center">
-          <button
-            class="py-[14px] px-[22px] bg-[#485C11] w-full rounded-[1000px] text-white font-bold font-dm-sans"
+          <div
+            class="py-[14px] px-[22px] bg-[#485C11] rounded-[1000px] w-[343px] tablet:w-[520px] desktop:w-[600px] text-white font-bold font-dm-sans text-[14px] flex items-center justify-center gap-1"
           >
             Learn More
-          </button>
+            <svg
+              width="6"
+              height="7"
+              viewBox="0 0 6 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.01037 4.9934V1.05184L5.64939 1.09142L0.735155 6.01131L0 5.27615L4.91423 0.361923L4.96513 1.00094H1.0066V0L6 0.0113101V4.9934H5.01037Z"
+                fill="white"
+              />
+            </svg>
+          </div>
         </div>
       </section>
       <!-- footer -->
-      <footer class="h-[324px] tablet:h-[250px]">
+      <footer class="h-[324px] tablet:h-[250px] desktop:w-full">
         <div
-          class="h-[114px] w-full mt-[40px] font-dm-sans text-[14px] font-bold"
+          class="h-[114px] tablet:h-[40px] w-full mt-[40px] font-dm-sans text-[14px] font-bold tablet:flex gap-[27px]"
         >
           <h4 class="mb-[27px]">Benefits</h4>
           <h4 class="mb-[27px]">Specifications</h4>
@@ -529,20 +1087,17 @@
               />
             </svg>
           </div>
-          <div class="flex">
-            <p>© Area.</p>
+          <div
+            class="flex tablet:w-[484.2491760253906px] desktop:w-[953.2491455078125px] tablet:text-[11px]"
+          >
+            <p class="">© Area.</p>
             <p class="ml-[16px]">2025</p>
           </div>
-          <div><p>All Rights Reserved</p></div>
+          <div><p class="tablet:text-[11px]">All Rights Reserved</p></div>
         </div>
+        <div class="h-[20px]"></div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
-<!-- <h1
-        class="font-['Crimson_Text'] font-normal text-[76px] tablet:text-[140px] desktop:text-[160px] leading-[85%] tablet:leading-[80%] dekstop:leading-[85%] tracking-[-.045em] tablet:tracking-[-0.05em] text-center"
-      >
-        Browse everything.
-      </h1> -->
