@@ -858,6 +858,10 @@ video {
   margin-bottom: 80px;
 }
 
+.mt-\[8\]{
+  margin-top: 8;
+}
+
 .box-border{
   box-sizing: border-box;
 }
