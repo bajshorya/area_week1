@@ -760,6 +760,16 @@ video {
   margin-bottom: 90px;
 }
 
+.my-\[80px\]{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mt-\[81\.276123046875px\]{
   margin-top: -81.276123046875px;
 }
@@ -834,6 +844,18 @@ video {
 
 .mt-\[80px\]{
   margin-top: 80px;
+}
+
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mt-\[px\]{
+  margin-top: px;
+}
+
+.mb-\[80px\]{
+  margin-bottom: 80px;
 }
 
 .box-border{
@@ -2269,6 +2291,21 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2448,6 +2485,14 @@ video {
 
 .pt-\[7px\]{
   padding-top: 7px;
+}
+
+.pt-\[80px\]{
+  padding-top: 80px;
+}
+
+.pb-\[100px\]{
+  padding-bottom: 100px;
 }
 
 .text-left{
@@ -3241,6 +3286,10 @@ video {
 }
 
 @media (min-width: 800px){
+  .tablet\:top-0{
+    top: 0px;
+  }
+
   .tablet\:col-start-2{
     grid-column-start: 2;
   }
@@ -3284,6 +3333,10 @@ video {
 
   .tablet\:mt-\[60px\]{
     margin-top: 60px;
+  }
+
+  .tablet\:mt-0{
+    margin-top: 0px;
   }
 
   .tablet\:block{
