@@ -2990,6 +2990,18 @@ video {
   letter-spacing: -1%;
 }
 
+.tracking-\[-0\.03\%\]{
+  letter-spacing: -0.03%;
+}
+
+.tracking-\[-0\.01\%\]{
+  letter-spacing: -0.01%;
+}
+
+.tracking-\[-0\.05\%\]{
+  letter-spacing: -0.05%;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
