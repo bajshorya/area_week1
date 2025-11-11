@@ -30,26 +30,83 @@
     >
       <!-- Navigation Bar -->
       <nav class="h-[106px] tablet:h-[148px]">
-        <div
-          class="tablet:hidden fixed w-full top-0 z-50 left-0 right-0 bg-white h-[78px] rounded-b-[20px] shadow-md flex justify-between items-start desktop:grid-cols-3 p-[20px]"
-        >
-          <div>
-            <div class="text-[30px]">Area</div>
+        <div class="tablet:hidden fixed w-full top-0 z-50 left-0 right-0">
+          <div
+            id="mobileHeader"
+            class="bg-white h-[78px] rounded-b-[20px] shadow-md flex justify-between items-start p-[20px] transition-all duration-300"
+          >
+            <div>
+              <div class="text-[30px]">Area</div>
+            </div>
+
+            <div class="cursor-pointer pt-[7px]" id="hamburger">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 5.6665H21V7.6665H3V5.6665ZM3 10.6665H21V12.6665H3V10.6665ZM3 15.6665H21V17.6665H3V15.6665Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
           </div>
 
-          <div class="cursor-pointer pt-[7px]">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <div
+            id="mobileMenu"
+            class="hidden bg-white shadow-lg rounded-b-[20px] h-[458px] overflow-hidden px-[20px] pb-[32px]"
+          >
+            <div class="flex justify-center items-center pt-[8px]">
+              <div
+                class="flex flex-col gap-[10px] h-[320px] w-[335px] *:border-t"
+              >
+                <a
+                  class="font-dm-sans font-bold py-[30px] text-[14px] leading-[140%] tracking-[-0.025em] cursor-pointer hover:text-[#485C11] transition-colors"
+                  href="#benefits"
+                  >Benefits</a
+                >
+                <a
+                  class="font-dm-sans font-bold py-[30px] text-[14px] leading-[140%] tracking-[-0.025em] cursor-pointer hover:text-[#485C11] transition-colors"
+                  href="#specs"
+                  >Specifications</a
+                >
+                <a
+                  class="font-dm-sans font-bold py-[30px] text-[14px] leading-[140%] tracking-[-0.025em] cursor-pointer hover:text-[#485C11] transition-colors"
+                  href="#How-to"
+                  >How-to</a
+                >
+                <a
+                  class="font-dm-sans font-bold py-[30px] text-[14px] leading-[140%] tracking-[-0.025em] cursor-pointer hover:text-[#485C11] transition-colors"
+                  href="#connect"
+                  >Contact-us</a
+                >
+              </div>
+            </div>
+
+            <button
+              class="bg-[#485C11] text-[#fff] px-[22px] py-[14px] gap-[2px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full hover:bg-[#8E9C78] transition-all duration-700 ease-in-out cursor-pointer group mt-[50px]"
             >
-              <path
-                d="M3 5.6665H21V7.6665H3V5.6665ZM3 10.6665H21V12.6665H3V10.6665ZM3 15.6665H21V17.6665H3V15.6665Z"
-                fill="black"
-              />
-            </svg>
+              Learn More
+              <div
+                class="group-hover:-translate-y-2 ease-in-out duration-200 transform"
+              >
+                <svg
+                  width="7"
+                  height="20"
+                  viewBox="0 0 7 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </button>
           </div>
         </div>
 
@@ -1157,6 +1214,43 @@
         <div class="h-[20px]"></div>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("mobileMenu");
+      const header = document.getElementById("mobileHeader");
+
+      const originalHamburgerSVG = hamburger.innerHTML;
+      const closeSVG = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.46 7L14 12.54V14H12.54L7 8.46L1.46 14H0V12.54L5.54 7L0 1.46V0H1.46L7 5.54L12.54 0H14V1.46L8.46 7Z" fill="black"/>
+</svg>`;
+
+      hamburger.addEventListener("click", function () {
+        const isMenuOpen = !menu.classList.contains("hidden");
+
+        if (isMenuOpen) {
+          menu.classList.add("hidden");
+          header.classList.remove("h-[106px]");
+          header.classList.add("h-[78px]");
+          header.classList.add("rounded-b-[20px]");
+          hamburger.innerHTML = originalHamburgerSVG;
+        } else {
+          menu.classList.remove("hidden");
+          header.classList.remove("h-[78px]");
+          header.classList.add("h-[106px]");
+          header.classList.remove("rounded-b-[20px]");
+          hamburger.innerHTML = closeSVG;
+        }
+      });
+
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", function () {
+          menu.classList.add("hidden");
+          header.classList.add("rounded-b-[20px]");
+          header.classList.remove("h-[106px]");
+          header.classList.add("h-[78px]");
+          hamburger.innerHTML = originalHamburgerSVG;
+        });
+      });
+    </script>
   </body>
 </html>
