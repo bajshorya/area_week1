@@ -107,7 +107,7 @@
         </h1>
         <div>
           <div
-            class="h-[362px] bg-[#8E9C78] desktop:mt-[240px] flex justify-center items-center rounded-[30px]"
+            class="h-[362px] bg-[#8E9C78] flex justify-center items-center rounded-[30px]"
           >
             <div
               class="flex justify-center items-center h-[422.93597412109375] tablet:hidden w-[270px] rounded-[27.36px] bg-black -mt-[81.276123046875px]"
@@ -119,7 +119,7 @@
               />
             </div>
             <div
-              class="hidden tablet:block justify-center items-center h-[541.8243408203125px] tablet:w-[676.5484008789062px] rounded-[17.9px] bg-black desktop:h-[644px] desktop:w-[907px] desktop:rounded-[16px] desktop:-mt-[141px]"
+              class="hidden tablet:block justify-center items-center h-[541.8243408203125px] tablet:w-[676.5484008789062px] rounded-[17.9px] bg-black desktop:h-[644px] desktop:w-[907px] desktop:rounded-[16px] desktop:-mt-[99px]"
             >
               <img
                 src="./assets/img/InnerScreenTablet.png"
@@ -136,15 +136,15 @@
           class="h-[436.4545593261719px] tablet:h-[334.6363525390625px] desktop:h-[235px]"
         >
           <div class="h-[101px]">
-            <div
-              class="pt-[50px] pb-[30px] text-[15px] font-[DM Sans] text-[#6F6F6F]"
+            <p
+              class="pt-[50px] pb-[30px] text-[15px] font-[DM Sans] text-[#6F6F6F] leading-[140%] tracking-[-0.5%]"
             >
               Trusted By:
-            </div>
+            </p>
           </div>
           <div class="desktop:h-[84px] mb-[50px]">
             <div
-              class="min-h-[81.81818389892578px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] tablet:gap-y-[20px]"
+              class="min-h-[81.81818389892578px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] desktop:gap-x-[0px] tablet:gap-y-[20px]"
             >
               <div
                 class="flex justify-center items-center h-[81.81818389892578px]"
@@ -208,7 +208,7 @@
       <section class="py-[50px]" id="benefits">
         <div>
           <h1
-            class="font-roboto-mono font-normal text-[10.5px] leading-[140%] tracking-[-.03em] text-[#485C11]"
+            class="font-roboto-mono font-normal text-[10.5px] desktop:text-[12px] leading-[140%] tracking-[-1%] text-[#485C11]"
           >
             Benefits
           </h1>
@@ -346,7 +346,7 @@
       <!-- See the big Picture Section-->
       <section class="tablet:h-[1516px] desktop:h-[831px]">
         <div
-          class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *: tablet:border-t desktop:border-hidden"
+          class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *:tablet:border-t desktop:border-hidden"
         >
           <div class="desktop:border-t">
             <h1
@@ -365,7 +365,7 @@
             </p>
 
             <div
-              class="*:py-5 *:flex tablet:*:items-center *:justify-start *:gap-[30px] *:border-t *:border-[#E9E9E9]"
+              class="*:py-5 *:flex tablet:*:items-center *:justify-start items-start *:gap-[30px] *:border-t *:border-[#E9E9E9]"
             >
               <div>
                 <p
@@ -376,7 +376,8 @@
                 <div
                   class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em]"
                 >
-                  Spot Trends in Seconds: No more digging through numbers.
+                  Spot Trends in Seconds: No more <br class="tablet:hidden" />
+                  digging through numbers.
                 </div>
               </div>
               <div>
@@ -388,8 +389,10 @@
                 <div
                   class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em]"
                 >
-                  Get Everyone on the Same Page: Share easy-to-understand
-                  reports with your team.
+                  Get Everyone on the Same Page: <br class="tablet:hidden" />
+                  Share easy-to-understand <br class="hidden desktop:block" />
+                  reports <br class="tablet:hidden" />
+                  with your team.
                 </div>
               </div>
               <div>
@@ -401,9 +404,12 @@
                 <div
                   class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em]"
                 >
-                  Make Presentations Pop: Interactive maps and dashboards keep
-                  <br class="desktop:block" />
-                  your audience <br class="tablet:block desktop:hidden" />
+                  Make Presentations Pop: Interactive
+                  <br class="tablet:hidden" />
+                  maps and dashboards keep
+                  <br class="hidden desktop:block" />
+                  your audience
+                  <br class="hidden tablet:block desktop:hidden" />
                   engaged.
                 </div>
               </div>
@@ -416,8 +422,11 @@
                 <div
                   class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em]"
                 >
-                  Your Global Snapshot: Get a quick, clear overview of your
-                  entire operation.
+                  Your Global Snapshot: Get a quick,
+                  <br class="tablet:hidden" />
+                  clear overview of your entire
+                  <br class="block tablet:hidden desktop:block" />
+                  operation.
                 </div>
               </div>
               <button
@@ -441,11 +450,11 @@
       </section>
       <!-- Why Choose Area Section -->
       <section
-        class="tablet:h-[1148px] desktop:h-[1163px] desktop:pb-[120px]"
+        class="tablet:h-[1148px] desktop:h-[1163px] mb-[120px] desktop:pb-[120px]"
         id="specs"
       >
         <div
-          class="h-[470px] tablet:p-[80px] tablet:h-[434px] border-t desktop:h-[441px] w-full desktop:flex justify-center items-center"
+          class="pt-[80px] h-[470px] tablet:p-[80px] tablet:h-[434px] border-t desktop:h-[441px] w-full desktop:flex justify-center items-center"
         >
           <div class="desktop:px[240px] desktop:w-[720px] h-full">
             <p
@@ -927,53 +936,46 @@
         </div>
       </section>
       <!-- Specs2 -->
-      <div
-        class="h-[909px] tablet:h-[1256px] desktop:h-[789.3818359375px] desktop:flex items-start"
+      <section
+        class="grid grid-col-1 desktop:grid-cols-2 gap-10 desktop:gap-5 items-center mb-[40px]"
       >
+        <img
+          src="./assets/img/3Balls.jpg"
+          alt="scene1"
+          class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[590px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
+        />
         <div
-          class="flex flex-col justify-center items-center desktop:grid grid-col-1 tablet:grid-cols-2 gap-5 mb-[40px] tablet:mb-[40px]"
+          class="desktop:h-[669.3818359375px] desktop:w-[590px] desktop:border-t desktop:border-[#E9E9E9]"
         >
-          <img
-            src="./assets/img/3Balls.jpg"
-            alt="scene1"
-            class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[590px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
-          />
           <div
-            class="tablet:h-[376px] desktop:h-[669.3818359375px] desktop:w-[590px] tablet:border-t"
+            class="desktop:w-[540px] desktop:h-[294px] desktop:ml-[50px] desktop:my-[139.69px]"
           >
-            <div
-              class="tablet:mt-[42.5px] desktop:flex justify-end items-center"
+            <h2
+              class="font-crimson-text font-normal text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] desktop:leading-[105%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left pt-[40px] desktop:tracking-[-0.04em] border-t desktop:border-t-0"
             >
-              <div
-                class="desktop:w-[540px] desktop:h-[294px] desktop:mt-[139.69px]"
+              “I was skeptical, but Area has completely transformed the way I
+              manage my business. The data visualizations are so clear and
+              intuitive, and the platform is so easy to use. I can't imagine
+              running my company without it.”
+            </h2>
+            <div
+              class="flex flex-row desktop:flex-col justify-start items-center desktop:items-start gap-[8px] mt-[50px]"
+            >
+              <span
+                class="font-dm-sans text-[15px] leading-[140%] font-normal tracking-[-0.005em]"
               >
-                <p
-                  class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left desktop:leading-[105%] desktop:tracking-[-0.04em]"
-                >
-                  “I was skeptical, but Area has completely transformed the way
-                  I manage my business. The data visualizations are so clear and
-                  intuitive, and the platform is so easy to use. I can't imagine
-                  running my company without it.”
-                </p>
-                <div
-                  class="flex desktop:flex-col items-baseline gap-[9px] mt-[50px]"
-                >
-                  <p
-                    class="text-[15px] tablet:leading-[140%] tablet:tracking-[-0.5%]"
-                  >
-                    John Smith
-                  </p>
-                  <p
-                    class="font-roboto-mono text-[10.5px] tablet:text-[11px] desktop:text-[12px] tablet:leading-[140%] tablet:tracking-[-1%] text-[#485C11]"
-                  >
-                    Head of Data
-                  </p>
-                </div>
-              </div>
+                John Smith
+              </span>
+              <span
+                class="font-roboto-mono font-normal text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] tracking-[-0.03em] desktop:tracking-[-0.01em] text-[#485C11]"
+              >
+                Head of Data
+              </span>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <!-- MapYourSuccess -->
       <section
         class="h-[700px] border-t tablet:h-[650px] desktop:h-[634px]"
