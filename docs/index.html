@@ -1239,12 +1239,15 @@
           header.classList.remove("h-[106px]");
           header.classList.add("h-[78px]");
           header.classList.add("rounded-b-[20px]");
+          header.classList.add("shadow-md");
+
           hamburger.innerHTML = originalHamburgerSVG;
         } else {
           menu.classList.remove("hidden");
           header.classList.remove("h-[78px]");
           header.classList.add("h-[106px]");
           header.classList.remove("rounded-b-[20px]");
+          header.classList.remove("shadow-md");
           hamburger.innerHTML = closeSVG;
         }
       });
