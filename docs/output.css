@@ -3590,6 +3590,11 @@ video {
     margin-bottom: 80px;
   }
 
+  .tablet\:my-\[50px\]{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   .tablet\:mb-\[120px\]{
     margin-bottom: 120px;
   }
@@ -3624,6 +3629,10 @@ video {
 
   .tablet\:mt-\[80px\]{
     margin-top: 80px;
+  }
+
+  .tablet\:mt-\[50px\]{
+    margin-top: 50px;
   }
 
   .tablet\:block{
