@@ -2648,6 +2648,16 @@ video {
   padding-bottom: 30px;
 }
 
+.px-\[32px\]{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.px-\[17px\]{
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
 .pb-\[30px\]{
   padding-bottom: 30px;
 }
@@ -3772,6 +3782,14 @@ video {
     row-gap: 20px;
   }
 
+  .tablet\:border{
+    border-width: 1px;
+  }
+
+  .tablet\:border-0{
+    border-width: 0px;
+  }
+
   .tablet\:border-t{
     border-top-width: 1px;
   }
@@ -3807,6 +3825,11 @@ video {
   .tablet\:py-\[40px\]{
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .tablet\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .tablet\:pt-\[40px\]{
@@ -3861,8 +3884,16 @@ video {
     letter-spacing: -1%;
   }
 
+  .tablet\:\*\:items-start > *{
+    align-items: flex-start;
+  }
+
   .tablet\:\*\:items-center > *{
     align-items: center;
+  }
+
+  .\*\:tablet\:border-0 > *{
+    border-width: 0px;
   }
 
   .\*\:tablet\:border-t > *{
@@ -3933,6 +3964,10 @@ video {
 
   .desktop\:-mt-\[99px\]{
     margin-top: -99px;
+  }
+
+  .desktop\:-mt-\[117\.5px\]{
+    margin-top: -117.5px;
   }
 
   .desktop\:block{
@@ -4268,5 +4303,9 @@ video {
 
   .desktop\:tracking-\[-0\.01em\]{
     letter-spacing: -0.01em;
+  }
+
+  .\*\:desktop\:border-0 > *{
+    border-width: 0px;
   }
 }
