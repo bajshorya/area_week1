@@ -2477,6 +2477,19 @@ video {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#\]{
+  background-color: #;
+}
+
+.bg-\[\#DFE\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 255 238 / var(--tw-bg-opacity, 1));
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
